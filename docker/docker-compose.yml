@@ -1,0 +1,13 @@
+garylog:
+  image: graylog2/allinone
+  ports:
+    - "9000:9000"
+    - "12201:12201"
+    - "12201:12201/udp"
+  volumes:
+    # Boot2Docker volumes
+    - /mnt/sda1/graylog/data:/var/opt/graylog/data
+    - /mnt/sda1/graylog/logs:/var/log/graylog
+    # Linux volumes
+    # - /graylog/data:/var/opt/graylog/data
+    # - /graylog/logs:/var/log/graylog

@@ -5,9 +5,8 @@ garylog:
     - "12201:12201"
     - "12201:12201/udp"
   volumes:
-    # Boot2Docker volumes
-    - /mnt/sda1/graylog/data:/var/opt/graylog/data
-    - /mnt/sda1/graylog/logs:/var/log/graylog
+    # Persist elasticsearch data on docker host
+    - "/home/docker/graylog:/var/opt/graylog/data"
     # Linux volumes
     # - /graylog/data:/var/opt/graylog/data
     # - /graylog/logs:/var/log/graylog

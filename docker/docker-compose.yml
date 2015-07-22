@@ -1,4 +1,4 @@
-garylog:
+graylog:
   image: graylog2/allinone
   ports:
     - "9000:9000"
